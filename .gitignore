@@ -1,0 +1,5 @@
+libs
+images
+IntervalometerApp\.vscode
+IntervalometerApp\node_modules
+IntervalometerApp\android\app\build
