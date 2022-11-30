@@ -10,10 +10,6 @@
 const char *ssid = "AP-ESP8266";
 const char *password = "987654321";
 
-// WI-FI SETUP
-//const char *ssid = "ShidenKai";
-//const char *password = "Db180365";
-
 IPAddress local_IP(192, 168, 4, 10);
 IPAddress subnet(255, 255, 255, 0);
 
@@ -173,32 +169,25 @@ void setupRelay() {
 }
 
 void setupWifi() {
-  // Connect to Wi-Fi
-  //  WiFi.config(local_IP, gateway, subnet, gateway);
-  //  WiFi.begin(ssid, password);
-  //  while (WiFi.status() != WL_CONNECTED) {
-  //    delay(1000);
-  //    Serial.println("Connecting to WiFi..");
-  //  }
-  //  Print ESP Local IP Address
-  //  Serial.println(WiFi.localIP());
-    WiFi.mode(WIFI_OFF);
-    delay(100);
-    WiFi.mode(WIFI_AP);
-    delay(100);
-    Serial.print("Setting soft-AP configuration ... ");
-    Serial.println(WiFi.softAPConfig(local_IP, local_IP, subnet) ? "Ready" : "Failed!");
-    delay(100);
-    Serial.print("Setting soft-AP ... ");
-    Serial.println(WiFi.softAP(ssid, password) ? "Ready" : "Failed!");
-//    WiFi.softAP(ssid);
-//    WiFi.softAP(ssid, password, channel, hidden, max_connection)
+  // Setup Soft-AP
+  WiFi.mode(WIFI_OFF);
 
-//    while (WiFi.softAPgetStationNum() < 1) {
-//      delay(1000);
-//    }
-    Serial.print("Soft-AP IP address = ");
-    Serial.println(WiFi.softAPIP());
+  delay(100);
+
+  WiFi.mode(WIFI_AP);
+
+  delay(100);
+
+  Serial.print("Setting soft-AP configuration ... ");
+  Serial.println(WiFi.softAPConfig(local_IP, local_IP, subnet) ? "Ready" : "Failed!");
+
+  delay(100);
+
+  Serial.print("Setting soft-AP ... ");
+  Serial.println(WiFi.softAP(ssid, password) ? "Ready" : "Failed!");
+
+  Serial.print("Soft-AP IP address = ");
+  Serial.println(WiFi.softAPIP());
 }
 
 void setupDNS() {
