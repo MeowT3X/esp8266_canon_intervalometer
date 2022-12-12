@@ -11,6 +11,6 @@ Canon: R, Ra, G10, G11, G12, 1100D, 1000D, 70D, 60D, 850D, 800D, 750D, 700D, 650
 potentially more.<br />
 Project tested on Canon 600D.
 # Wiring Diagram
-![Wiring diagram](https://github.com/MeowT3X/esp8266-intervalometer/blob/main/scheme.png)
+![Wiring diagram](https://github.com/MeowT3X/esp8266_canon_intervalometer/blob/master/scheme.png)
 # Getting Started
 1. 
