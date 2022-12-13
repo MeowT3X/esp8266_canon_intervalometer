@@ -47,7 +47,6 @@ gradlew assembleDebug
 6. Connect your phone to esp8266 Wi-Fi AP
 7. Launch App. It should connects to esp8266 websocket server automatically.
 8. Choose intervalometer parameters and start shooting timelapse!
-<img src="https://github.com/MeowT3X/esp8266_canon_intervalometer/blob/master/Screenshot_light_theme.png" width="250"></img>
 <img src="https://github.com/MeowT3X/esp8266_canon_intervalometer/blob/master/Screenshot_dark_theme.png" width="250"></img>
 ### iOS
 Not tested on iOS, but if you have Mac and apple developer accound, just try build "IntervalometerApp/ios" project using xCode, when install it to your iPhone using TestFlight, it should work fine.
