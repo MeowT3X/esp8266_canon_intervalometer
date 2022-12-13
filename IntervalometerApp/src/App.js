@@ -1,9 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
+/* Copyright (C) 2022 Vladislav Sapegin
+ * You may use, distribute and modify this code under the
+ * terms of the MIT license
  */
 
 import React, {useEffect, useState, useMemo, useCallback} from 'react';

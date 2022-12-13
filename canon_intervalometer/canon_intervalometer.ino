@@ -6,6 +6,11 @@
 #include <WebSockets4WebServer.h>
 #include <WebSocketsServer.h>
 
+/* Copyright (C) 2022 Vladislav Sapegin
+ * You may use, distribute and modify this code under the
+ * terms of the MIT license
+*/
+
 // WI-FI AP SETUP
 const char *ssid = "AP-ESP8266";
 const char *password = "987654321";
